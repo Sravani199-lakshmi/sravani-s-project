@@ -1,0 +1,28 @@
+<div class="container mt-3">
+  <h2>Edit Employee</h2>
+
+  <!-- ✅ (ngSubmit) now calls updateEmployee() -->
+  <form (ngSubmit)="updateEmployee(id,emp)" *ngIf="emp">
+    <div class="mb-3">
+      <label>Name</label>
+      <input [(ngModel)]="emp.name" name="name" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label>Email</label>
+      <input [(ngModel)]="emp.email" name="email" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label>Department</label>
+      <input [(ngModel)]="emp.department" name="department" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label>Salary</label>
+      <input type="number" [(ngModel)]="emp.salary" name="salary" class="form-control" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update</button>
+  </form>
+</div>
