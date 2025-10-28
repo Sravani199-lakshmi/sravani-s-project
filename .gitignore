@@ -1,0 +1,15 @@
+# Angular
+/frontend/node_modules/
+/frontend/dist/
+
+# Java / Spring Boot
+/backend/target/
+/backend/.idea/
+/backend/.project
+/backend/.classpath
+/backend/.settings/
+
+# General
+*.log
+.DS_Store
+
